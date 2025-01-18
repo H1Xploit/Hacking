@@ -10,6 +10,6 @@
     ";a=prompt,a()//"
   </text>
   <text x="10" y="80" font-family="Arial" font-size="16" fill="black">
-    '</svg/onload=prompt(8)>'  
+    '<svg/onload=prompt(8)>'  
   </text>
 </svg>
