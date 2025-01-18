@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
-    <html:script>alert(document.domain);</html:script>
-    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
-        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
-    </svg>
-    <html:iframe src="https://example.com"></html:iframe>
-</html>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+    <circle cx="150" cy="100" r="80" stroke="black" stroke-width="3" fill="blue" />
+    <html xmlns:html="http://www.w3.org/1999/xhtml">
+        <html:script>alert(document.domain);</html:script>
+        <html:iframe src="https://example.com" width="200" height="150" style="border:none;"></html:iframe>
+    </html>
+</svg>
