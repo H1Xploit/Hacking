@@ -1,0 +1,36 @@
+<svg width="300" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Latar belakang -->
+    <rect width="100%" height="100%" fill="lightblue"/>
+
+    <!-- Teks "Your IP Address:" -->
+    <text x="10" y="40" font-family="Arial" font-size="16" fill="black">Your IP Address:</text>
+
+    <!-- Tempat untuk menampilkan alamat IP -->
+    <text id="ipText" x="10" y="70" font-family="Arial" font-size="16" fill="black">Loading...</text>
+
+    <!-- JavaScript untuk mengambil dan menampilkan alamat IP -->
+    <script type="text/ecmascript">
+        <![CDATA[
+        // Fungsi untuk mengambil alamat IP
+        function fetchIP() {
+            fetch('https://api.ipify.org?format=json')
+                .then(response => response.json())
+                .then(data => {
+                    const ipTextElement = document.getElementById('ipText');
+                    if (ipTextElement) {
+                        ipTextElement.textContent = data.ip;
+                    }
+                })
+                .catch(() => {
+                    const ipTextElement = document.getElementById('ipText');
+                    if (ipTextElement) {
+                        ipTextElement.textContent = 'Unable to fetch IP';
+                    }
+                });
+        }
+
+        // Jalankan fungsi fetchIP saat SVG dimuat
+        fetchIP();
+        ]]>
+    </script>
+</svg>
